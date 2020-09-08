@@ -21,13 +21,14 @@ int main()
         }
     }
 
-    for(int i{}; i < 4; i++)
-    {
-        for(int j{}; j < 4; j++)
-        {
-            std::cout << "Health" << *(*(heroList + i)) + j << std::endl;
-        }
-    }
+    //Pequeño error para recorrer, pero ahorita se resulve no pasa nada oiga.
+    // for(int i{}; i < 4; i++)
+    // {
+    //     for(int j{}; j < 4; j++)
+    //     {
+    //         std::cout << "Health" << *(*(heroList + i)) + j << std::endl;
+    //     }
+    // }
 
     // std::cout << "Hero Skills: " << std::endl;
 
