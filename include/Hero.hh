@@ -4,8 +4,13 @@
 class Hero : public Character
 {
     private:
-    
+        uint32_t level;
+        bool isBad{false};
+        std::string* skills;
+
     public:
-        Hero(short int health, uint32_t strength, uint32_t exp, short int luck, uint32_t speed);
+        Hero(short int, uint32_t, uint32_t, short int, uint32_t, uint32_t, std::string*);
         ~Hero();
+        std::string* GetSkills() const;
+        uint32_t GetLevel() const;
 };
