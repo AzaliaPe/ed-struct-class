@@ -19,16 +19,19 @@ int main()
             new Hero(5, 3, 1, 2, 3, 1, new std::string[4]{{"flash"}, {"superman"}, {"iron man"}, {"capitan america"}}),
             new Hero(5, 3, 1, 2, 3, 1, new std::string[4]{{"dead pool"}, {"black panther"}, {"black widow"}, {"hulk"}})
         }
-    }
+    };
 
-    //Pequeño error para recorrer, pero ahorita se resulve no pasa nada oiga.
-    // for(int i{}; i < 4; i++)
-    // {
-    //     for(int j{}; j < 4; j++)
-    //     {
-    //         std::cout << "Health" << *(*(heroList + i)) + j << std::endl;
-    //     }
-    // }
+    for(int i{}; i < 4; i++)
+    {
+        //std::cout << "Health: " << (*heroList)->GetHealth() << std::endl;
+
+        std::cout << "Hero: " << i + 1 << std::endl;    
+        for(int j{}; j < 4; j++)
+        {
+            std::cout << "Skill: " << *((*(heroList + i))->GetSkills() + j) << std::endl;
+        }
+        std::cout << std::endl;
+    }
 
     // std::cout << "Hero Skills: " << std::endl;
 
